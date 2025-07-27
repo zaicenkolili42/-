@@ -1,15 +1,88 @@
 body {
+  display: flex;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fdfdfd;
   color: #333;
   line-height: 1.6;
   padding: 20px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 30px;
+  position: fixed;
+  margin-top: 3%;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 30px 3px #80a6e1;
+  box-shadow: 1px 1px 30px 3px #80a6e1;
+  margin-left: 60px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.sidebar ul {
+  list-style-type: none;
+  margin-left: -25;
+}
+
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover {
   color: #004080;
+  text-decoration: none;
+}
+.sidebar a.active {
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-weight: bold;
+}
+
+body:has(#terms:target) .sidebar a[href='#terms'],
+body:has(#structure:target) .sidebar a[href='#structure'],
+body:has(#headings:target) .sidebar a[href='#headings'],
+body:has(#paragraphs:target) .sidebar a[href='#paragraphs'],
+body:has(#lists:target) .sidebar a[href='#lists'],
+body:has(#links:target) .sidebar a[href='#links'],
+body:has(#anchor-links:target) .sidebar a[href='#anchor-links'],
+body:has(#target:target) .sidebar a[href='#target'],
+body:has(#media:target) .sidebar a[href='#media'],
+body:has(#video:target) .sidebar a[href='#video'],
+body:has(#audio:target) .sidebar a[href='#audio'],
+body:has(#images:target) .sidebar a[href='#images'],
+body:has(#stilisation:target) .sidebar a[href='#stilisation'],
+body:has(#tables:target) .sidebar a[href='#tables'],
+body:has(#attrubut:target) .sidebar a[href='#attrubut'],
+body:has(#semantic-tags:target) .sidebar a[href='#semantic-tags'] {
+  background-color: #1e40af;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 540px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #004080;
+  text-align: center;
 }
 
 h1 {
@@ -41,10 +114,15 @@ code {
 }
 
 pre {
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
   padding: 10px;
   border-radius: 6px;
-  overflow-x: auto;
+  overflow-x: visible;
+}
+pre:hover {
+  transition: 0.3s;
+  -webkit-box-shadow: 1px 1px 30px 3px #80a6e1;
+  box-shadow: 1px 1px 30px 3px #80a6e1;
 }
 
 a {
@@ -56,8 +134,10 @@ a:hover {
   text-decoration: underline;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 1.5em;
+  list-style: none;
 }
 
 li {
@@ -91,7 +171,8 @@ thead {
   color: white;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px 15px;
   text-align: left;
@@ -103,4 +184,7 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
   background-color: #f1f1f1;
+}
+strong {
+  color: #004080;
 }

@@ -5,37 +5,39 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+     <aside class="sidebar">
+        <ol>
+          <li><a href="#terms">Термины</a></li>
+          <li><a href="#structure">Базовая структура</a></li>
+          <li><a href="#headings">Заголовки</a></li>
+          <li><a href="#paragraphs">Параграфы</a></li>
+          <li><a href="#lists">Списки</a></li>
+          <li>
+            <a href="#links">Ссылки</a>
+            <ul>
+              <li><a href="#anchor-links">Якорные ссылки</a></li>
+              <li><a href="#target">Атрибут target</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#media">Медиа</a>
+            <ul>
+              <li><a href="#video">Видео</a></li>
+              <li><a href="#audio">Аудио</a></li>
+            </ul>
+          </li>
+          </ul>
+        <li><a href="#images">Изображения</a></li>
+        <li><a href="#stilisation">Теги стилизации текста</a></li>
+        <li><a href="#tables">Таблицы</a></li>
+        <li><a href="#attrubut">Атрибуты</a></li>
+        <li><a href="#semantic-tags">Семантические теги</a></li>
+      </ol>
+      </aside>
+    <div class="container">
     <h1>Справочник для бабули</h1>
-    <ol>
-      <li><a href="#terms">Термины</a></li>
-      <li><a href="#structure">Базовая структура</a></li>
-      <li><a href="#headings">Заголовки</a></li>
-      <li><a href="#paragraphs">Параграфы</a></li>
-      <li><a href="#lists">Списки</a></li>
-      <li>
-        <a href="#links">Ссылки</a>
-        <ul>
-          <li><a href="#anchor-links">Якорные ссылки</a></li>
-          <li><a href="#target">Атрибут target</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#media">Медиа</a>
-        <ul>
-          <li><a href="#video">Видео</a></li>
-          <li><a href="#audio">Аудио</a></li>
-        </ul>
-      </li>
-      </ul>
 
-      <li><a href="#images">Изображения</a></li>
-      <li><a href="#stilisation">Теги стилизации текста</a></li>
-      <li><a href="#tables">Таблицы</a></li>
-      <li><a href="#attributes">Атрибуты</a></li>
-      <li><a href="#semantic-tags">Семантические теги</a></li>
-    </ol>
-    <hr />
-    <h2 id="terms">Термины</h2>
+e    <h2 id="terms">Термины</h2>
     <ul>
       <li>
         <strong>HTML</strong> — язык разметки гипертекста, используемый для
@@ -381,7 +383,7 @@
       Для добавления медиа-контента, такого как видео и аудио, используются теги
       <code>&lt;video&gt;</code> и <code>&lt;audio&gt;</code>.
     </p>
-    <h3>Видео</h3>
+    <h3 id="video">Видео</h3>
     <p>
       Видео добавляется с помощью тега <code>&lt;video&gt;</code>, который
       может содержать атрибуты <code>controls</code>, <code>autoplay</code>,
@@ -406,7 +408,7 @@
       Видео позволяет пользователям просматривать мультимедийный контент прямо на
       странице.
     </p>
-    <h3>Аудио</h3>
+    <h3 id="audio">Аудио</h3>
     <p>
       Аудио добавляется с помощью тега <code>&lt;audio&gt;</code>, который
       также может содержать атрибуты <code>controls</code>, <code>autoplay</code>,
@@ -432,7 +434,7 @@
       странице.
     </p>
     <hr />
-    <h2>Атрибуты</h2>
+    <h2 id="attrubut">Атрибуты</h2>
     <p>
       Атрибуты используются для добавления дополнительной информации к
       HTML-тегам. Они указываются внутри тега и состоят из имени и значения,
@@ -518,5 +520,6 @@
       его восприятие как пользователями, так и поисковыми системами.
     </p>
     <hr />
+  </div>
   </body>
 </html>
