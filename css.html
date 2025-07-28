@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Справочник CSS</title>
+    <link rel="stylesheet" href="/css/style-css.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <ul class="TOC">
+        <li><a href="#terms">Термины</a></li>
+        <li><a href="#color">Цвет</a></li>
+        <li><a href="#text-color">Цвет текста</a></li>
+        <li><a href="#background-color">Цвет фона</a></li>
+        <li>
+          <a href="index.html" target="_blank" class="external-link"
+            >Справочник по HTML</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <div class="container">
+        <h1>Cправочник по CSS для бабули</h1>
+        <section id="terms">
+          <h2>Термины</h2>
+          <p>Вот ключевые термины, которые важно знать при изучении CSS:</p>
+          <ul>
+            <li>
+              <strong>Селектор</strong>
+              Часть CSS, которая указывает, к каким элементам применять стили.
+            </li>
+
+            <li>
+              <strong>Свойство</strong>
+              Определяет, какой аспект элемента нужно изменить (например,
+              <code>color</code>, <code>font-size</code>).
+            </li>
+            <li>
+              <strong>Значение</strong>
+              Указывает, каким должно быть значение свойства (например,
+              <code>red</code>, <code>16px</code>).
+            </li>
+
+            <li>
+              <strong>Правило</strong>
+              Одна пара «селектор — блок свойств», записанная в фигурных
+              скобках.
+            </li>
+
+            <li>
+              <strong>Каскад</strong>
+              Принцип приоритета: какой стиль будет применён, если их несколько.
+            </li>
+
+            <li>
+              <strong>Наследование</strong>
+              Некоторые свойства CSS передаются от родителя к потомку
+              автоматически.
+            </li>
+
+            <li>
+              <strong>Специфичность</strong>
+              Числовая система, которая определяет приоритет селекторов.
+            </li>
+
+            <li>
+              <strong>Псевдокласс</strong>
+              Селектор, описывающий особое состояние элемента (например,
+              <code>:hover</code>).
+            </li>
+
+            <li>
+              <strong>Псевдоэлемент</strong>
+              Селектор, позволяющий стилизовать часть элемента (например,
+              <code>::before</code>).
+            </li>
+
+            <li>
+              <strong>Медиа-запрос</strong>
+              Условие для применения стилей в зависимости от размера экрана и
+              других параметров.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="color">Цвет</h2>
+          <h3 id="text-color">Цвет текста</h3>
+          <p>
+            Свойство <code>color</code> используется для задания цвета текста
+            элементов.
+          </p>
+
+          <h4>Примеры записи цвета:</h4>
+          <ul>
+            <li>
+              <strong class="noviolet">Именованный цвет:</strong>
+              <code>color: red;</code>
+            </li>
+            <li>
+              <strong class="noviolet">HEX-код:</strong>
+              <code>color: #ff0000;</code>
+            </li>
+            <li>
+              <strong class="noviolet">RGB:</strong>
+              <code>color: rgb(255, 0, 0);</code>
+            </li>
+            <li>
+              <strong class="noviolet">RGBA (с прозрачностью):</strong>
+              <code>color: rgba(255, 0, 0, 0.5);</code>
+            </li>
+            <li>
+              <strong class="noviolet">HSL:</strong>
+              <code>color: hsl(0, 100%, 50%);</code>
+            </li>
+            <li>
+              <strong class="noviolet">HSLA:</strong>
+              <code>color: hsla(0, 100%, 50%, 0.5);</code>
+            </li>
+          </ul>
+
+          <h4>Пример:</h4>
+          <pre><code>p {
+  color: #2c3e50;
+}</code></pre>
+
+          <h4>Замечания:</h4>
+          <ul>
+            <li>Цвет наследуется от родителя, если явно не переопределён.</li>
+            <li>По умолчанию цвет зависит от темы браузера и настроек.</li>
+          </ul>
+          <h3 id="background-color">Цвет фона</h3>
+          <p>
+            Свойство <code>background-color</code> задаёт цвет фона
+            HTML-элемента.
+          </p>
+
+          <h4>Примеры записи цвета:</h4>
+          <ul>
+            <li>
+              <strong>Именованный цвет:</strong>
+              <code>background-color: lightblue;</code>
+            </li>
+            <li>
+              <strong>HEX:</strong> <code>background-color: #f0f0f0;</code>
+            </li>
+            <li>
+              <strong>RGB:</strong>
+              <code>background-color: rgb(240, 240, 240);</code>
+            </li>
+            <li>
+              <strong>RGBA:</strong>
+              <code>background-color: rgba(0, 0, 255, 0.1);</code>
+            </li>
+            <li>
+              <strong>HSL:</strong>
+              <code>background-color: hsl(200, 100%, 95%);</code>
+            </li>
+          </ul>
+
+          <h4>Пример:</h4>
+          <pre><code>div {
+  background-color: #e0e0e0;
+}</code></pre>
+
+          <h4>Особенности:</h4>
+          <ul>
+            <li>
+              Фон может быть прозрачным по умолчанию (<code>transparent</code>).
+            </li>
+            <li>
+              Если у родителя задан цвет, а у потомка — нет, цвет не
+              наследуется, но остаётся визуально заметным.
+            </li>
+            <li>
+              Цвет фона можно комбинировать с фоновыми изображениями через
+              свойство <code>background</code>.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

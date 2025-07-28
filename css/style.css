@@ -23,11 +23,15 @@ h1 {
   -webkit-box-shadow: 1px 1px 30px 3px #80a6e1;
   box-shadow: 1px 1px 30px 3px #80a6e1;
   margin-left: 60px;
+  padding-bottom: 30;
+  padding-top: 30;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .sidebar ul {
   list-style-type: none;
-  margin-left: -25;
+  margin-left: 0;
 }
 
 .sidebar a {
@@ -42,37 +46,17 @@ h1 {
   color: #004080;
   text-decoration: none;
 }
-.sidebar a.active {
-  background-color: #dbeafe;
-  color: #1e40af;
-  font-weight: bold;
-}
 
-body:has(#terms:target) .sidebar a[href='#terms'],
-body:has(#structure:target) .sidebar a[href='#structure'],
-body:has(#headings:target) .sidebar a[href='#headings'],
-body:has(#paragraphs:target) .sidebar a[href='#paragraphs'],
-body:has(#lists:target) .sidebar a[href='#lists'],
-body:has(#links:target) .sidebar a[href='#links'],
-body:has(#anchor-links:target) .sidebar a[href='#anchor-links'],
-body:has(#target:target) .sidebar a[href='#target'],
-body:has(#media:target) .sidebar a[href='#media'],
-body:has(#video:target) .sidebar a[href='#video'],
-body:has(#audio:target) .sidebar a[href='#audio'],
-body:has(#images:target) .sidebar a[href='#images'],
-body:has(#stilisation:target) .sidebar a[href='#stilisation'],
-body:has(#tables:target) .sidebar a[href='#tables'],
-body:has(#attrubut:target) .sidebar a[href='#attrubut'],
-body:has(#semantic-tags:target) .sidebar a[href='#semantic-tags'] {
-  background-color: #1e40af;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-}
 .container {
   display: flex;
   flex-direction: column;
   margin-left: 540px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
 }
 
 h1,
@@ -100,6 +84,7 @@ h2 {
 h3 {
   font-size: 1.3em;
   margin-top: 1.2em;
+  color: rgb(105, 0, 242);
 }
 
 p {
@@ -187,4 +172,20 @@ tbody tr:hover {
 }
 strong {
   color: #004080;
+}
+.sidebar .external-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar .external-link:hover {
+  background-color: #357abd;
+  text-decoration: none;
 }
