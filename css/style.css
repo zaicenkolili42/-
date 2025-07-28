@@ -18,14 +18,13 @@ h1 {
   background-color: #ffffff;
   padding: 30px;
   position: fixed;
-  margin-top: 1vh;
-  border-radius: 15px;
+  margin-top: -1vh;
+  border-radius: 5px;
   -webkit-box-shadow: 1px 1px 30px 3px #80a6e1;
   box-shadow: 1px 1px 30px 3px #80a6e1;
-  margin-left: 60px;
-  padding-bottom: 30;
-  padding-top: 30;
-  height: 80vh;
+  margin-left: -1vh;
+  padding-top: 5;
+  height: 92vh;
   overflow-y: scroll;
 }
 
