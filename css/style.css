@@ -15,7 +15,7 @@ h1 {
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #004080;
   padding: 30px;
   position: fixed;
   margin-top: -1vh;
@@ -30,7 +30,7 @@ h1 {
 
 .sidebar ul {
   list-style-type: none;
-  margin-left: 0;
+  margin-left: -3vh;
 }
 
 .sidebar a {
@@ -39,11 +39,19 @@ h1 {
   text-align: center;
   display: block;
   margin-bottom: 10px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .sidebar a:hover {
   color: #004080;
   text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
+  box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
+  background-color: #004080;
 }
 
 .container {
@@ -130,8 +138,8 @@ li {
 
 hr {
   border: none;
-  border-top: 1px solid #ccc;
-  margin: 2em 0;
+  border: 2px solid #fff;
+  margin: 20px 0;
 }
 
 img {
@@ -177,7 +185,7 @@ strong {
   margin-top: 10px;
   padding: 6px 12px;
   background-color: #4a90e2;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 6px;
   text-align: center;
@@ -185,6 +193,6 @@ strong {
 }
 
 .sidebar .external-link:hover {
-  background-color: #357abd;
+  color: #fff;
   text-decoration: none;
 }

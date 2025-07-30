@@ -4,8 +4,15 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <body>
     <aside class="sidebar">
       <ul class="TOC">
+        <li>
+          <a href="css.html" target="_blank" class="external-link"
+            >Справочник по CSS</a
+          >
+        </li>
+        <hr />
         <li><a href="#terms">Термины</a></li>
         <li><a href="#structure">Базовая структура</a></li>
         <li><a href="#headings">Заголовки</a></li>
@@ -32,7 +39,6 @@
         <li><a href="#semantic-tags">Семантические теги</a></li>
         <li><a href="#buttons">Кнопки</a></li>
         <li><a href="#forms">Формы</a></li>
-        <li><a href="css.html" target="_blank" class="external-link">Справочник по CSS</a></li>
       </ul>
     </aside>
     <div class="container">
@@ -110,7 +116,8 @@
     &lt;p&gt;Это пример базовой структуры HTML-документа.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-    </pre>
+    </pre
+      >
       <p>
         Этот пример демонстрирует, как правильно структурировать HTML-документ.
       </p>
@@ -543,42 +550,45 @@
 &lt;footer&gt;
   &lt;p&gt;© 2023 Ваш сайт. Все права защищены.&lt;/p&gt;
 &lt;/footer&gt;
-    </pre>
+    </pre
+      >
       <p>
         Использование семантических тегов улучшает структуру документа и
         облегчает его восприятие как пользователями, так и поисковыми системами.
       </p>
       <h2>Другие текстовые теги</h2>
-    <h2 id="buttons">Кнопки</h2>
-    <p>
-      Кнопки создаются с помощью тега <code>&lt;button&gt;</code>. Они могут
-      выполнять различные действия — отправку формы, запуск скрипта и др.
-    </p>
-    <p>Пример кнопки:</p>
-    <pre>
+      <h2 id="buttons">Кнопки</h2>
+      <p>
+        Кнопки создаются с помощью тега <code>&lt;button&gt;</code>. Они могут
+        выполнять различные действия — отправку формы, запуск скрипта и др.
+      </p>
+      <p>Пример кнопки:</p>
+      <pre>
 &lt;button&gt;Нажми меня&lt;/button&gt;
-</pre>
-    <p>Пример с обработчиком события JavaScript:</p>
-    <pre>
+</pre
+      >
+      <p>Пример с обработчиком события JavaScript:</p>
+      <pre>
 &lt;button onclick="alert('Привет, бабуля!')"&gt;Поприветствовать&lt;/button&gt;
-</pre>
-    <p>Примеры кнопок:</p>
-    <button>Нажми меня</button>
-    <button onclick="alert('Привет, бабуля!')">Поприветствовать</button>
-    <p>
-      Кнопки можно стилизовать с помощью CSS и назначать им любые действия через
-      JavaScript.
-    </p>
-    <hr />
+</pre
+      >
+      <p>Примеры кнопок:</p>
+      <button>Нажми меня</button>
+      <button onclick="alert('Привет, бабуля!')">Поприветствовать</button>
+      <p>
+        Кнопки можно стилизовать с помощью CSS и назначать им любые действия
+        через JavaScript.
+      </p>
+      <hr />
 
-    <h2 id="forms">Формы</h2>
-    <p>
-      Формы используются для сбора данных от пользователя. Они создаются с
-      помощью тега <code>&lt;form&gt;</code> и могут содержать различные поля
-      ввода.
-    </p>
-    <p>Пример простой формы:</p>
-    <pre>
+      <h2 id="forms">Формы</h2>
+      <p>
+        Формы используются для сбора данных от пользователя. Они создаются с
+        помощью тега <code>&lt;form&gt;</code> и могут содержать различные поля
+        ввода.
+      </p>
+      <p>Пример простой формы:</p>
+      <pre>
 &lt;form action="/submit" method="post"&gt;
   &lt;label for="name"&gt;Имя:&lt;/label&gt;
   &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
@@ -589,28 +599,30 @@
   &lt;input type="submit" value="Отправить"&gt;
 &lt;/form&gt;
 </pre
-    >
-    <p>Этот код создаёт форму с двумя полями и кнопкой отправки.</p>
+      >
+      <p>Этот код создаёт форму с двумя полями и кнопкой отправки.</p>
 
-    <p>Пример формы:</p>
-    <form action="#" method="post">
-      <label for="name">Имя:</label>
-      <input type="text" id="name" name="name" /><br /><br />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br /><br />
-      <input type="submit" value="Отправить" />
-    </form>
+      <p>Пример формы:</p>
+      <form action="#" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <input type="submit" value="Отправить" />
+      </form>
 
-    <p>Некоторые популярные элементы форм:</p>
-    <ul>
-      <li><strong>input</strong> — поле ввода (текст, email, пароль и др.)</li>
-      <li><strong>textarea</strong> — многострочное поле ввода</li>
-      <li><strong>select</strong> — выпадающий список</li>
-      <li><strong>button</strong> — кнопка</li>
-      <li><strong>label</strong> — описание для поля</li>
-    </ul>
-    <p>Пример с выпадающим списком и текстовой областью:</p>
-    <pre>
+      <p>Некоторые популярные элементы форм:</p>
+      <ul>
+        <li>
+          <strong>input</strong> — поле ввода (текст, email, пароль и др.)
+        </li>
+        <li><strong>textarea</strong> — многострочное поле ввода</li>
+        <li><strong>select</strong> — выпадающий список</li>
+        <li><strong>button</strong> — кнопка</li>
+        <li><strong>label</strong> — описание для поля</li>
+      </ul>
+      <p>Пример с выпадающим списком и текстовой областью:</p>
+      <pre>
 &lt;form&gt;
   &lt;label for="message"&gt;Сообщение:&lt;/label&gt;&lt;br&gt;
   &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;&lt;br&gt;
@@ -623,13 +635,14 @@
 
   &lt;button type="submit"&gt;Отправить&lt;/button&gt;
 &lt;/form&gt;
-</pre>
+</pre
+      >
 
-    <p>
-      Формы позволяют взаимодействовать с пользователем и собирать важные
-      данные.
-    </p>
-    <hr />
- </div>
+      <p>
+        Формы позволяют взаимодействовать с пользователем и собирать важные
+        данные.
+      </p>
+      <hr />
+    </div>
   </body>
 </html>

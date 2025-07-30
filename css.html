@@ -9,14 +9,19 @@
   <body>
     <aside class="sidebar">
       <ul class="TOC">
-        <li><a href="#terms">Термины</a></li>
-        <li><a href="#color">Цвет</a></li>
-        <li><a href="#text-color">Цвет текста</a></li>
-        <li><a href="#background-color">Цвет фона</a></li>
         <li>
-          <a href="index.html" target="_blank" class="external-link"
+          <a href="index.html" target="_blank" class="external-link HTML-part"
             >Справочник по HTML</a
           >
+        </li>
+        <hr />
+        <li class="nav-el"><a href="#terms" class="nav-links">Термины</a></li>
+        <li class="nav-el"><a href="#color" class="nav-links">Цвет</a></li>
+        <li class="nav-el">
+          <a href="#text-color" class="nav-links">Цвет текста</a>
+        </li>
+        <li class="nav-el">
+          <a href="#background-color" class="nav-links">Цвет фона</a>
         </li>
       </ul>
     </aside>
@@ -24,8 +29,10 @@
       <div class="container">
         <h1>Cправочник по CSS для бабули</h1>
         <section id="terms">
-          <h2>Термины</h2>
-          <p>Вот ключевые термины, которые важно знать при изучении CSS:</p>
+          <h2 class="section-heading">Термины</h2>
+          <p class="default-text">
+            Вот ключевые термины, которые важно знать при изучении CSS:
+          </p>
           <ul>
             <li>
               <strong>Селектор</strong>
@@ -85,9 +92,9 @@
           </ul>
         </section>
         <section>
-          <h2 id="color">Цвет</h2>
-          <h3 id="text-color">Цвет текста</h3>
-          <p>
+          <h2 id="color" class="section-heading">Цвет</h2>
+          <h3 id="text-color" class="section-subheading">Цвет текста</h3>
+          <p class="default-text">
             Свойство <code>color</code> используется для задания цвета текста
             элементов.
           </p>
@@ -131,7 +138,7 @@
             <li>По умолчанию цвет зависит от темы браузера и настроек.</li>
           </ul>
           <h3 id="background-color">Цвет фона</h3>
-          <p>
+          <p class="default-text">
             Свойство <code>background-color</code> задаёт цвет фона
             HTML-элемента.
           </p>
