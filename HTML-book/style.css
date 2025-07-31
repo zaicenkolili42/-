@@ -42,7 +42,7 @@ body {
 }
 
 .nav-links:hover {
-  transition: 05s;
+  transition: 0.5s;
   color: #004080;
   text-decoration: none;
   color: #ffffff;

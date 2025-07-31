@@ -1,11 +1,15 @@
 body {
-  margin: 0;
+  margin: 0 15px;
 }
 header {
   display: flex;
   background-color: #7a3f08;
   text-align: center;
   align-items: center; /* центрирование по вертикали */
+  -webkit-box-shadow: 2px 5px 15px 5px chocolate;
+  box-shadow: 2px 5px 15px 5px chocolate;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 li {
   list-style: none;
@@ -16,10 +20,11 @@ li {
   justify-content: center;
   margin: 0 auto;
 }
-.nav-list {
+.nav-list,
+.other-books,
+.anchor-links {
   gap: 20px;
   display: flex;
-  align-items: сenter;
 }
 .container {
   display: flex;
@@ -53,7 +58,7 @@ h1 {
   padding: 5px 5px;
   color: #ffffff;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 5px;
   text-align: center;
   transition: background-color 0.3s;
   text-decoration: none;
@@ -63,4 +68,25 @@ h1 {
   transition: 0.5s;
   -webkit-box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
   box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
+}
+.anchor-links {
+  margin-top: 10px;
+  padding: 5px 5px;
+  background-color: #d015b1;
+  border-radius: 5px;
+}
+.anchor-links:hover {
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
+  box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
+}
+.anchor-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.anchor-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
