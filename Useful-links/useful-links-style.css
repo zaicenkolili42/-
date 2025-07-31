@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  background-color: #7a3f08;
+  text-align: center;
+  align-items: center; /* центрирование по вертикали */
+}
+li {
+  list-style: none;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.nav-list {
+  gap: 20px;
+  display: flex;
+  align-items: сenter;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+h1 {
+  margin-top: 35px;
+  padding: 5px;
+  font-size: 2.2em;
+  color: rgb(255, 255, 255);
+}
+.youtube-video {
+  border-radius: 15px;
+}
+.default-subtitle {
+  font-size: 1.2em;
+  color: #7a3f08;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.Gosha {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.external-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 5px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: #c8c517;
+}
+.external-link:hover {
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
+  box-shadow: 0px 2px 0px 7px rgba(255, 255, 255, 0.79);
+}

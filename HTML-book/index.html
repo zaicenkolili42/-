@@ -1,0 +1,667 @@
+<html>
+  <head>
+    <title>Справочник</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <ul class="TOC">
+        <li><a href="" target="_blank" class="external-link useful-links">Полезные ресурсы</a></li>
+        <li>
+          <a href="/CSS-book/css.html" target="_blank" class="external-link CSS-part">Справочник по CSS</a>
+        </li>
+        <hr />
+        <li class="nav-el"><a class="nav-links" href="#terms">Термины</a></li>
+        <li class="nav-el">
+          <a class="nav-links" href="#structure">Базовая структура</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#headings">Заголовки</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#paragraphs">Параграфы</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#lists">Списки</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#bullet">Маркированные списки</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#numerated">Нумерованные список</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#links">Ссылки</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#anchor-links">Якорные ссылки</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#target">Атрибут target</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#media">Медиа</a>
+        </li>
+        <li class="nav-el"><a class="nav-links" href="#video">Видео</a></li>
+        <li class="nav-el"><a class="nav-links" href="#audio">Аудио</a></li>
+        <li class="nav-el">
+          <a class="nav-links" href="#images">Изображения</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#stilisation">Теги стилизации текста</a>
+        </li>
+        <li class="nav-el"><a class="nav-links" href="#tables">Таблицы</a></li>
+        <li class="nav-el">
+          <a class="nav-links" href="#attrubut">Атрибуты</a>
+        </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#semantic-tags">Семантические теги</a>
+        </li>
+        <li class="nav-el"><a class="nav-links" href="#buttons">Кнопки</a></li>
+        <li class="nav-el"><a class="nav-links" href="#forms">Формы</a></li>
+      </ul>
+    </aside>
+    <div class="container">
+      <h1>Справочник для бабули</h1>
+
+      <h2 id="terms">Термины</h2>
+      <ul>
+      <li class="default-li"></li>
+        <strong>HTML</strong> — язык разметки гипертекста, используемый для
+        создания веб-страниц.
+      </li>
+      <li class="default-li">
+        <strong>Тег</strong> — элемент HTML, заключенный в угловые скобки,
+        определяющий структуру и содержание документа.
+      </li>
+      <li class="default-li">
+        <strong>Атрибут</strong> — дополнительная информация о теге,
+        указываемая внутри тега.
+      </li>
+      <li class="default-li">
+        <strong>Семантический тег</strong> — тег, который имеет смысл и
+        помогает понять структуру документа, например,
+        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+        <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>,
+        <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>,
+        <code>&lt;footer&gt;</code>.
+      </li>
+      <li class="""default-li"></li>
+        <strong>Якорная ссылка</strong> — ссылка, которая позволяет перейти к
+        определенному разделу на странице, используя атрибут
+        <code>href</code> с символом <code>#</code> и идентификатором
+        элемента.
+      </li>
+      <li class="default-li">
+        <strong>Атрибут target</strong> — атрибут, который определяет, как
+        открывать ссылки. Например, <code>target="_blank"</code>
+        открывает ссылку в новой вкладке.
+      </li>
+      <li class="default-li">
+        <strong>Семантические теги</strong> — теги, которые помогают
+        структурировать HTML-документ и делают его более понятным для
+        поисковых систем и вспомогательных технологий.
+      </li>
+      </ul>
+      <h2 id="structure">Базовая структура HTML-документа</h2>
+      <p>HTML-документ состоит из следующих основных частей:</p>
+      <ul>
+      <li class="default-li">
+        <strong>DOCTYPE</strong> — определяет тип документа и версию HTML.
+      </li>
+      <li class="default-li">
+        <strong>html</strong> — корневой элемент, содержащий весь документ.
+      </li>
+      <li class="default-li">
+        <strong>head</strong> — содержит метаданные, такие как заголовок
+        страницы, ссылки на стили и скрипты.
+      </li>
+      <li class="default-li">
+        <strong>body</strong> — содержит видимое содержимое страницы, включая
+        текст, изображения и другие элементы.
+      </li>
+      </ul>
+      <hr />
+      <h3>Пример структуры</h3>
+      <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Заголовок страницы&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;link rel="stylesheet" href="/css/style.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Заголовок страницы&lt;/h1&gt;
+    &lt;p&gt;Это пример базовой структуры HTML-документа.&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+    </pre
+      >
+      <p>
+      Этот пример демонстрирует, как правильно структурировать HTML-документ.
+      </p>
+      <hr />
+      <h2 id="headings">Заголовки</h2>
+      <p>
+      Заголовки используются для организации контента и имеют уровни от 1 до
+      6:
+      </p>
+      <ul>
+      <li class="default-li"><strong>h1</strong> — основной заголовок страницы.</li>
+      <li class="default-li"><strong>h2</strong> — подзаголовок первого уровня.</li>
+      <li class="default-li"><strong>h3</strong> — подзаголовок второго уровня.</li>
+      <li class="default-li">и так далее до <strong>h6</strong> — наименьший заголовок.</li>
+      </ul>
+      <p>Пример использования заголовков:</p>
+      <pre>
+  <h1>&lt;h1&gt;Основной заголовок&lt;/h1&gt;</h1>
+  <h2>&lt;h2&gt;Подзаголовок первого уровня&lt;/h2&gt;</h2>
+  <h3>&lt;h3&gt;Подзаголовок второго уровня&lt;/h3&gt;</h3>
+  <h4>&lt;h4&gt;Подзаголовок третьего уровня&lt;/h4&gt;</h4>
+  <h5>&lt;h5&gt;Подзаголовок четвертого уровня&lt;/h5&gt;</h5>
+  <h6>&lt;h6&gt;Подзаголовок пятого уровня&lt;/h6&gt;</h6>
+    </pre>
+      <p>
+      Использование заголовков помогает структурировать текст и улучшает
+      восприятие информации.
+      </p>
+      <h2 id="paragraphs">Параграфы</h2>
+      <p>
+      Параграфы используются для разделения текста на логические блоки. Они
+      создаются с помощью тега <code>&lt;p&gt;</code>.
+      </p>
+      <p>Пример параграфа:</p>
+      <pre>
+  &lt;p&gt;Это пример параграфа. Он содержит текст, который будет отображаться на странице.&lt;/p&gt;
+    </pre
+      >
+      <p>
+      Параграфы помогают сделать текст более читаемым и структурированным.
+      </p>
+      <h2 id="lists">Списки</h2>
+      <p>
+      Списки используются для представления информации в виде упорядоченных
+      или неупорядоченных элементов.
+      </p>
+      <h3 id="bullet">Неупорядоченные списки</h3>
+      <p>
+      Неупорядоченные списки создаются с помощью тега
+      <code>&lt;ul&gt;</code> и содержат элементы списка, заключенные в теги
+      <code>&lt;li&gt;</code>.
+      </p>
+      <pre>
+  &lt;ul&gt;
+    &lt;li&gt;Первый элемент списка&lt;/li&gt;
+    &lt;li&gt;Второй элемент списка&lt;/li&gt;
+    &lt;li&gt;Третий элемент списка&lt;/li&gt;
+  &lt;/ul&gt;
+    </pre
+      >
+      <p>Пример неупорядоченного списка:</p>
+      <ul>
+      <li class="default-li">Первый элемент</li>
+      <li class="default-li">Второй элемент</li>
+      <li class="default-li">Третий элемент</li>
+      </ul>
+      <h3 id="numerated">Упорядоченные списки</h3>
+      <p>
+      Упорядоченные списки создаются с помощью тега <code>&lt;ol&gt;</code> и
+      также содержат элементы списка в тегах <code>&lt;li&gt;</code>.
+      </p>
+      <pre>
+  &lt;ol&gt;
+    &lt;li&gt;Первый элемент списка&lt;/li&gt;
+    &lt;li&gt;Второй элемент списка&lt;/li&gt;
+    &lt;li&gt;Третий элемент списка&lt;/li&gt;
+  &lt;/ol&gt;
+    </pre
+      >
+      <p>Пример упорядоченного списка:</p>
+      <ol class="default-ol">
+      <li class="default-li">Первый элемент</li>
+      <li class="default-li">Второй элемент</li>
+      <li class="default-li">Третий элемент</li>
+      </ol>
+      <h2 id="links">Ссылки</h2>
+      <p>
+      Ссылки создаются с помощью тега <code>&lt;a&gt</code>. Они позволяют
+      переходить на другие страницы или ресурсы.
+      </p>
+      <p>Пример ссылки:</p>
+      <pre>
+  &lt;a href="https://example.com"&gt;Перейти на Example.com&lt;/a&gt;
+    </pre
+      >
+      <p>
+      Этот код создаст ссылку на Example.com. При нажатии на нее пользователь
+      будет перенаправлен на указанный адрес.
+      </p>
+      <p>Пример ссылки:</p>
+      <a href="https://example.com">Перейти на Example.com</a>
+      <p>
+      Ссылки могут быть использованы для навигации по сайту или для перехода
+      на внешние ресурсы.
+      </p>
+      <hr />
+      <h3 id="anchor-links">Якорные ссылки</h3>
+      <p>
+      Якорные ссылки позволяют перейти к определенному разделу на странице.
+      Для этого используется атрибут <code>href</code> с символом
+      <code>#</code>, указывающим на идентификатор элемента.
+      </p>
+      <p>Пример якорной ссылки:</p>
+      <pre>
+  &lt;a href="#section1"&gt;Перейти к разделу 1&lt;/a&gt;
+    </pre
+      >
+      <p>
+      Этот код создаст ссылку, которая при нажатии перенаправит пользователя к
+      разделу с идентификатором <code>section1</code>.
+      </p>
+      <p>Пример якорной ссылки:</p>
+      <a href="#section1">Перейти к разделу 1</a>
+      <p>
+      Чтобы создать якорную ссылку, нужно добавить идентификатор к элементу, к
+      которому вы хотите перейти. Например:
+      </p>
+      <pre>
+  &lt;h2 id="section1"&gt;Раздел 1&lt;/h2&gt;
+  &lt;p&gt;Это содержимое раздела 1.&lt;/p&gt;
+    </pre
+      >
+      <p>
+      Этот код создаст заголовок с идентификатором <code>section1</code>, и
+      при нажатии на якорную ссылку пользователь будет перенаправлен к этому
+      разделу.
+      </p>
+      <h2 id="section1">Раздел 1</h2>
+      <p>Это содержимое раздела 1.</p>
+      <hr />
+      <h3 id="target">target attrubut</h3>
+      <p>
+      Атрибут <code>target</code> используется для указания, как открывать
+      ссылки. Например, <code>target="_blank"</code> открывает ссылку в новой
+      вкладке.
+      </p>
+      <p>Пример использования атрибута <code>target</code>:</p>
+      <pre>
+  &lt;a href="https://example.com" target="_blank"&gt;Открыть Example.com в новой вкладке&lt;/a&gt;
+    </pre
+      >
+      <p>
+      Этот код создаст ссылку, которая при нажатии откроет Example.com в новой
+      вкладке браузера.
+      </p>
+      <p>Пример ссылки с атрибутом <code>target</code>:</p>
+      <a href="https://example.com" target="_blank"
+      >Открыть Example.com в новой вкладке</a
+      >
+      <p>
+      Использование атрибута <code>target</code> позволяет контролировать, как
+      открываются ссылки, что может быть полезно для улучшения
+      пользовательского опыта.
+      </p>
+      <hr />
+      <h2 id="images">Изображения</h2>
+      <p>
+      Изображения добавляются с помощью тега <code>&lt;img&gt;</code>. Этот
+      тег не имеет закрывающего тега и содержит атрибут <code>src</code>,
+      указывающий путь к изображению.
+      </p>
+      <p>Пример добавления изображения:</p>
+      <pre>
+  &lt;img src="path/to/image.jpg" &gt;
+    </pre
+      >
+      <p>Этот код вставит изображение на страницу.</p>
+      <p>Пример изображения:</p>
+      <img
+      src="https://rybnoeizobilie.ru/images/poleznaja_informacija_/prodazha_sortov_zhirnoy_ryby_optom2.jpg"
+      alt="Пример изображения"
+      />
+      <p>
+      Изображения могут быть использованы для иллюстрации текста или для
+      создания визуального контента на странице.
+      </p>
+      <hr />
+      <h2 id="stilisation">Теги стилизвции текста</h2>
+      <p>Для стилизации текста используются следующие теги:</p>
+      <ul class="default-ul">
+      <li class="default-li"><strong>strong</strong> — выделяет текст жирным шрифтом.</li>
+      <li class="default-li"><strong>em</strong> — выделяет текст курсивом.</li>
+      <li class="default-li"><strong>u</strong> — подчеркивает текст.</li>
+      <li class="default-li"><strong>mark</strong> — выделяет текст цветом фона.</li>
+      <li class="default-li"><strong>small</strong> — уменьшает размер текста.</li>
+      <li class="default-li"><strong>del</strong> — отображает текст с зачеркиванием.</li>
+      <li class="default-li"><strong>ins</strong> — отображает добавленный текст.</li>
+      </ul>
+      <p>Примеры использования тегов стилизации:</p>
+      <pre>
+  &lt;strong&gt;Жирный текст&lt;/strong&gt;
+  &lt;em&gt;Курсивный текст&lt;/em&gt;
+  &lt;u&gt;Подчеркнутый текст&lt;/u&gt;
+  &lt;mark&gt;Выделенный текст&lt;/mark&gt;
+  &lt;small&gt;Маленький текст&lt;/small&gt;
+  &lt;del&gt;Зачеркнутый текст&lt;/del&gt;
+  &lt;ins&gt;Добавленный текст&lt;/ins&gt;
+    </pre
+      >
+      <p>Примеры стилизованного текста:</p>
+      <strong>Жирный текст</strong><br />
+      <em>Курсивный текст</em><br />
+      <u>Подчеркнутый текст</u><br />
+      <mark>Выделенный текст</mark><br />
+      <small>Маленький текст</small><br />
+      <del>Зачеркнутый текст</del><br />
+      <ins>Добавленный текст</ins><br />
+      <p>
+      Эти теги помогают выделить важные части текста и сделать его более
+      читаемым.
+      </p>
+      <hr />
+      <h2 id="tables">Таблицы</h2>
+      <p>
+      Таблицы используются для представления данных в виде строк и столбцов.
+      Они создаются с помощью тега <code>&lt;table&gt;</code> и содержат
+      следующие элементы:
+      </p>
+      <ul>
+      <li class="default-li"><strong>thead</strong> — определяет заголовок таблицы.</li>
+      <li class="default-li"><strong>tbody</strong> — содержит основное содержимое таблицы.</li>
+      <li class="default-li"><strong>tr</strong> — определяет строку таблицы.</li>
+      <li class="default-li"><strong>th</strong> — определяет ячейку заголовка.</li>
+      <li class="default-li"><strong>td</strong> — определяет ячейку данных.</li>
+      </ul>
+      <p>Пример таблицы:</p>
+      <pre>
+  &lt;table&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Заголовок 1&lt;/th&gt;
+      &lt;th&gt;Заголовок 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Данные 1&lt;/td&gt;
+      &lt;td&gt;Данные 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;  
+      &lt;td&gt;Данные 3&lt;/td&gt;
+      &lt;td&gt;Данные 4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+    </pre
+      >
+      <p>
+      Этот код создаст таблицу с двумя заголовками и двумя строками данных.
+      </p>
+      <table>
+      <thead>
+        <tr>
+        <th>Заголовок 1</th>
+        <th>Заголовок 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>Данные 1</td>
+        <td>Данные 2</td>
+        </tr>
+        <tr>
+        <td>Данные 3</td>
+        <td>Данные 4</td>
+        </tr>
+      </tbody>
+      </table>
+      <p>
+      Таблицы помогают организовать данные и сделать их более понятными для
+      восприятия.
+      </p>
+      <hr />
+      <h2 id="media">Медиа</h2>
+      <p>
+      Для добавления медиа-контента, такого как видео и аудио, используются
+      теги
+      <code>&lt;video&gt;</code> и <code>&lt;audio&gt;</code>.
+      </p>
+      <h3 id="video">Видео</h3>
+      <p>
+      Видео добавляется с помощью тега <code>&lt;video&gt;</code>, который
+      может содержать атрибуты <code>controls</code>, <code>autoplay</code>,
+      <code>loop</code> и <code>muted</code>.
+      </p>
+      <p>Пример видео:</p>
+      <pre>
+  &lt;video controls width="600"&gt;
+    &lt;source src="path/to/video.mp4" type="video/mp4"&gt;
+    Ваш браузер не поддерживает видео.
+  &lt;/video&gt;
+    </pre
+      >
+      <p>
+      Этот код вставит видео с элементами управления. Атрибут
+      <code>width</code>
+      задает ширину видео.
+      </p>
+      <video controls width="600">
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+      Ваш браузер не поддерживает видео.
+      </video>
+      <p>
+      Видео позволяет пользователям просматривать мультимедийный контент прямо
+      на странице.
+      </p>
+      <h3 id="audio">Аудио</h3>
+      <p>
+      Аудио добавляется с помощью тега <code>&lt;audio&gt;</code>, который
+      также может содержать атрибуты <code>controls</code>,
+      <code>autoplay</code>, <code>loop</code> и <code>muted</code>.
+      </p>
+      <p>Пример аудио:</p>
+      <pre>
+  &lt;audio controls&gt;
+    &lt;source src="path/to/audio.mp3" type="audio/mpeg"&gt;
+    Ваш браузер не поддерживает аудио.
+  &lt;/audio&gt;
+    </pre
+      >
+      <p>
+      Этот код вставит аудио с элементами управления. Пользователи смогут
+      воспроизводить, приостанавливать и регулировать громкость аудио.
+      </p>
+      <audio controls>
+      <source
+        src="https://www.w3schools.com/html/horse.mp3"
+        type="audio/mpeg"
+      />
+      Ваш браузер не поддерживает аудио.
+      </audio>
+      <p>
+      Аудио позволяет пользователям прослушивать звуковой контент прямо на
+      странице.
+      </p>
+      <hr />
+      <h2 id="attrubut">Атрибуты</h2>
+      <p>
+      Атрибуты используются для добавления дополнительной информации к
+      HTML-тегам. Они указываются внутри тега и состоят из имени и значения,
+      разделенных знаком равенства.
+      </p>
+      <p>Пример атрибута:</p>
+      <pre>
+  &lt;a href="https://example.com" target="_blank"&gt;Ссылка&lt;/a&gt;
+    </pre
+      >
+      <p>
+      Этот код создает ссылку с атрибутом <code>href</code>, указывающим адрес
+      ссылки, и атрибутом <code>target</code>, который открывает ссылку в
+      новой вкладке.
+      </p>
+      <p>Некоторые распространенные атрибуты:</p>
+      <ul>
+      <li class="default-li"><strong>href</strong> — указывает адрес ссылки.</li>
+      <li class="default-li"><strong>src</strong> — указывает путь к изображению.</li>
+      <li class="default-li"></li>
+        <strong>alt</strong> — задает альтернативный текст для изображения.
+      </li>
+      <li class="default-li"><strong>class</strong> — задает класс элемента для стилизации.</li>
+      <li class="default-li"><strong>id</strong> — задает уникальный идентификатор элемента.</li>
+      <li class="default-li"><strong>style</strong> — задает встроенный стиль элемента.</li>
+      </ul>
+      <p>
+      Атрибуты позволяют настраивать поведение и внешний вид HTML-элементов.
+      </p>
+      <hr />
+
+      <h2 id="semantic-tags">Семантические теги</h2>
+      <p>
+      Семантические теги помогают структурировать HTML-документ и делают его
+      более понятным для поисковых систем и вспомогательных технологий.
+      </p>
+      <p>Некоторые распространенные семантические теги:</p>
+      <ul class="default-ul">
+      <li class="default-li">
+        <strong>header</strong> — определяет верхнюю часть страницы или
+        раздела.
+      </li>
+      <li class="default-li"><strong>nav</strong> — определяет навигационное меню.</li>
+      <li class="default-li"><strong>main</strong> — определяет основной контент страницы.</li>
+      <li class="default-li"><strong>article</strong> — определяет независимый контент.</li>
+      <li class="default-li"><strong>section</strong> — определяет раздел страницы.</li>
+      <li class="default-li">
+        <strong>aside</strong> — определяет боковую панель или дополнительный
+        контент.
+      </li>
+      <li class="default-li">
+        <strong>footer</strong> — определяет нижнюю часть страницы или
+        раздела.
+      </li>
+      </ul class="default-ul">
+      <p>Пример использования семантических тегов:</p>
+      <pre>
+  &lt;header&gt;
+    &lt;h1&gt;Заголовок страницы&lt;/h1&gt;
+    &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#section1"&gt;Раздел 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#section2"&gt;Раздел 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;article&gt;
+    &lt;h2&gt;Статья 1&lt;/h2&gt;
+    &lt;p&gt;Это пример статьи.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;section&gt;
+    &lt;h2&gt;Раздел 1&lt;/h2&gt;
+    &lt;p&gt;Это пример раздела.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+    &lt;p&gt;Это боковая панель с дополнительной информацией.&lt;/p&gt;
+    &lt;/aside&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;p&gt;© 2023 Ваш сайт. Все права защищены.&lt;/p&gt;
+  &lt;/footer&gt;
+    </pre
+      >
+      <p>
+      Использование семантических тегов улучшает структуру документа и
+      облегчает его восприятие как пользователями, так и поисковыми системами.
+      </p>
+      <h2>Другие текстовые теги</h2>
+      <h2 id="buttons">Кнопки</h2>
+      <p>
+      Кнопки создаются с помощью тега <code>&lt;button&gt;</code>. Они могут
+      выполнять различные действия — отправку формы, запуск скрипта и др.
+      </p>
+      <p>Пример кнопки:</p>
+      <pre>
+  &lt;button&gt;Нажми меня&lt;/button&gt;
+  </pre
+      >
+      <p>Пример с обработчиком события JavaScript:</p>
+      <pre>
+  &lt;button onclick="alert('Привет, бабуля!')"&gt;Поприветствовать&lt;/button&gt;
+  </pre
+      >
+      <p>Примеры кнопок:</p>
+      <button>Нажми меня</button>
+      <button onclick="alert('Привет, бабуля!')">Поприветствовать</button>
+      <p>
+      Кнопки можно стилизовать с помощью CSS и назначать им любые действия
+      через JavaScript.
+      </p>
+      <hr />
+
+      <h2 id="forms">Формы</h2>
+      <p>
+      Формы используются для сбора данных от пользователя. Они создаются с
+      помощью тега <code>&lt;form&gt;</code> и могут содержать различные поля
+      ввода.
+      </p>
+      <p>Пример простой формы:</p>
+      <pre>
+  &lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Имя:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    
+    &lt;input type="submit" value="Отправить"&gt;
+  &lt;/form&gt;
+  </pre
+      >
+      <p>Этот код создаёт форму с двумя полями и кнопкой отправки.</p>
+
+      <p>Пример формы:</p>
+      <form action="#" method="post">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Отправить" />
+      </form>
+
+      <p>Некоторые популярные элементы форм:</p>
+      <ul class="default-ul">
+      <li class="default-li">
+        <strong>input</strong> — поле ввода (текст, email, пароль и др.)
+      </li>
+      <li class="default-li"><strong>textarea</strong> — многострочное поле ввода</li>
+      <li class="default-li"><strong>select</strong> — выпадающий список</li>
+      <li class="default-li"><strong>button</strong> — кнопка</li>
+      <li class="default-li"><strong>label</strong> — описание для поля</li>
+      </ul>
+      <p>Пример с выпадающим списком и текстовой областью:</p>
+      <pre>
+  &lt;form&gt;
+    &lt;label for="message"&gt;Сообщение:&lt;/label&gt;&lt;br&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;&lt;br&gt;
+
+    &lt;label for="choice"&gt;Выберите:&lt;/label&gt;
+    &lt;select id="choice" name="choice"&gt;
+    &lt;option value="1"&gt;Первый вариант&lt;/option&gt;
+    &lt;option value="2"&gt;Второй вариант&lt;/option&gt;
+    &lt;/select&gt;&lt;br&gt;
+
+    &lt;button type="submit"&gt;Отправить&lt;/button&gt;
+  &lt;/form&gt;
+  </pre
+      >
+
+      <p>
+      Формы позволяют взаимодействовать с пользователем и собирать важные
+      данные.
+      </p>
+      <hr />
+    </div>
