@@ -6,7 +6,7 @@ body {
 }
 .container {
   display: flex;
-  margin-left: 500px;
+  margin-left: 400px;
   flex-direction: column;
 }
 .sidebar {
@@ -14,15 +14,14 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #80e1b9;
-  padding: 20px;
-  position: fixed;
+	position: fixed;
   margin-top: 1vh;
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 30px 3px #80e1b9;
   box-shadow: 1px 1px 30px 3px #80e1b9;
   margin-left: 1vh;
-  padding-top: 5;
-  height: 90vh;
+	padding: 5 20px 20px;
+	height: 90vh;
   overflow-y: scroll;
 }
 .TOC {

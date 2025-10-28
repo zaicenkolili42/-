@@ -61,6 +61,9 @@
         <li class="nav-el">
           <a class="nav-links" href="#semantic-tags">Семантические теги</a>
         </li>
+        <li class="nav-el">
+          <a class="nav-links" href="#block-inline">Блочные и строчные</a>
+        </li>
         <li class="nav-el"><a class="nav-links" href="#buttons">Кнопки</a></li>
         <li class="nav-el"><a class="nav-links" href="#forms">Формы</a></li>
       </ul>
@@ -409,6 +412,27 @@
       </pre>
       <p>Использование семантических тегов улучшает структуру документа и облегчает его восприятие как пользователями, так и поисковыми системами.</p>
       
+      <h2 id="block-inline">Блочные и строчные элементы</h2>
+      <p>Все HTML-элементы делятся на две основные категории по их поведению на странице: блочные и строчные.</p>
+      <ul>
+        <li class="default-li"><strong>Блочные элементы (block-level)</strong> всегда начинаются с новой строки и занимают всю доступную ширину. Примеры: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>.</li>
+        <li class="default-li"><strong>Строчные элементы (inline)</strong> не начинаются с новой строки и занимают только то место, которое необходимо для их содержимого. Примеры: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>.</li>
+      </ul>
+      <p>Для группировки элементов часто используют теги <code>&lt;div&gt;</code> (блочный) и <code>&lt;span&gt;</code> (строчный).</p>
+      <pre>
+&lt;!-- &lt;div&gt; используется для группировки больших блоков контента --&gt;
+&lt;div style="background-color: lightgrey; padding: 10px;"&gt;
+  &lt;h3&gt;Это заголовок внутри div&lt;/h3&gt;
+  &lt;p&gt;Это параграф внутри того же div.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+  Это обычный текст, а это &lt;span style="color: red; font-weight: bold;"&gt;важная часть&lt;/span&gt; текста, выделенная с помощью &lt;span&gt;.
+&lt;/p&gt;
+      </pre>
+      <p>Понимание этой разницы — ключ к управлению разметкой страницы.</p>
+      <hr />
+
       <h2 id="buttons">Кнопки</h2>
       <p>Кнопки создаются с помощью тега <code>&lt;button&gt;</code>. Они могут выполнять различные действия — отправку формы, запуск скрипта и др.</p>
       <p>Пример кнопки:</p>
@@ -477,5 +501,6 @@
       <p>Формы позволяют взаимодействовать с пользователем и собирать важные данные.</p>
       <hr />
     </div>
+  
   </body>
 </html>
