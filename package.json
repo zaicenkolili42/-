@@ -1,0 +1,14 @@
+{
+  "name": "lili-handbook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "Lili handbook/node_modules/.bin/vite",
+    "build": "Lili handbook/node_modules/.bin/vite build",
+    "preview": "Lili handbook/node_modules/.bin/vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4"
+  }
+}
