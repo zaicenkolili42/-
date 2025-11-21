@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Quiz</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>CSS Quiz</h1>
+  <div id="quiz-container"></div>
+
+  <script src="quizzes.js"></script>
+  <script>
+    fetch('css_quiz.json')
+      .then(response => response.json())
+      {
+        "question": "What is the correct HTML for referring to an external style sheet?",
+        "answers": [
+          { "text": "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">", "correct": true },
+          { "text": "<style src=\"mystyle.css\">", "correct": false },
+          { "text": "<stylesheet>mystyle.css</stylesheet>", "correct": false }
+        ]
+      },
+      {
+        "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+        "answers": [
+          { "text": "In the <body> section", "correct": false },
+          { "text": "At the end of the document", "correct": false },
+          { "text": "In the <head> section", "correct": true }
+        ]
+      }
+    ]
+  </script>
+</body>
+</html>

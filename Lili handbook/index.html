@@ -500,7 +500,21 @@
 
       <p>Формы позволяют взаимодействовать с пользователем и собирать важные данные.</p>
       <hr />
+      <section id="html-quiz-section">
+        <h2>HTML Quiz</h2>
+        <div id="quiz-container"></div>
+      </section>
     </div>
-  
+    <script src="src/quizzes/quizzes.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const quizContainer = document.getElementById('quiz-container');
+        fetch('src/quizzes/html_quiz.json')
+          .then(response => response.json())
+          .then(quizData => {
+            createQuiz(quizContainer, quizData);
+          });
+      });
+    </script>
   </body>
 </html>

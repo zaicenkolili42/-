@@ -1,0 +1,19 @@
+
+[
+  {
+    "question": "What does CSS stand for?",
+    "answers": [
+      { "text": "Cascading Style Sheets", "correct": true },
+      { "text": "Creative Style Sheets", "correct": false },
+      { "text": "Computer Style Sheets", "correct": false }
+    ]
+  },
+  {
+    "question": "Which HTML attribute is used to define inline styles?",
+    "answers": [
+      { "text": "class", "correct": false },
+      { "text": "style", "correct": true },
+      { "text": "font", "correct": false }
+    ]
+  }
+]

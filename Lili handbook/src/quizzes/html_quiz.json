@@ -1,0 +1,399 @@
+
+[
+  {
+    "question": "Что означает HTML?",
+    "answers": [
+      { "text": "Hyper Text Markup Language", "correct": true },
+      { "text": "Hyperlinks and Text Markup Language", "correct": false },
+      { "text": "Home Tool Markup Language", "correct": false }
+    ]
+  },
+  {
+    "question": "Кто разрабатывает веб-стандарты?",
+    "answers": [
+      { "text": "Google", "correct": false },
+      { "text": "The World Wide Web Consortium", "correct": true },
+      { "text": "Microsoft", "correct": false }
+    ]
+  },
+  {
+    "question": "Выберите правильный HTML-элемент для самого большого заголовка:",
+    "answers": [
+      { "text": "<h6>", "correct": false },
+      { "text": "<heading>", "correct": false },
+      { "text": "<h1>", "correct": true }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент используется для вставки разрыва строки?",
+    "answers": [
+      { "text": "<br>", "correct": true },
+      { "text": "<lb>", "correct": false },
+      { "text": "<break>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно задать фоновый цвет в HTML?",
+    "answers": [
+      { "text": "<body bg=\"yellow\">", "correct": false },
+      { "text": "<background>yellow</background>", "correct": false },
+      { "text": "<body style=\"background-color:yellow;\">", "correct": true }
+    ]
+  },
+  {
+    "question": "Выберите правильный HTML-элемент для выделения важного текста:",
+    "answers": [
+      { "text": "<strong>", "correct": true },
+      { "text": "<b>", "correct": false },
+      { "text": "<i>", "correct": false }
+    ]
+  },
+  {
+    "question": "Выберите правильный HTML-элемент для выделения текста курсивом:",
+    "answers": [
+      { "text": "<em>", "correct": true },
+      { "text": "<italic>", "correct": false },
+      { "text": "<i>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно создать гиперссылку в HTML?",
+    "answers": [
+      { "text": "<a href=\"http://www.w3schools.com\">W3Schools</a>", "correct": true },
+      { "text": "<a>http://www.w3schools.com</a>", "correct": false },
+      { "text": "<a url=\"http://www.w3schools.com\">W3Schools.com</a>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой символ используется для обозначения закрывающего тега?",
+    "answers": [
+      { "text": "/", "correct": true },
+      { "text": "<", "correct": false },
+      { "text": "*", "correct": false }
+    ]
+  },
+  {
+    "question": "Как открыть ссылку в новой вкладке/окне браузера?",
+    "answers": [
+      { "text": "<a href=\"url\" target=\"new\">", "correct": false },
+      { "text": "<a href=\"url\" target=\"_blank\">", "correct": true },
+      { "text": "<a href=\"url\" new>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какие из этих элементов являются элементами таблицы <table>?",
+    "answers": [
+      { "text": "<table><tr><td>", "correct": true },
+      { "text": "<table><head><tfoot>", "correct": false },
+      { "text": "<table><tr><tt>", "correct": false }
+    ]
+  },
+  {
+    "question": "Строчные элементы обычно отображаются без начала новой строки.",
+    "answers": [
+      { "text": "Верно", "correct": true },
+      { "text": "Неверно", "correct": false }
+    ]
+  },
+  {
+    "question": "Как создать нумерованный список?",
+    "answers": [
+      { "text": "<ol>", "correct": true },
+      { "text": "<ul>", "correct": false },
+      { "text": "<dl>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как создать маркированный список?",
+    "answers": [
+      { "text": "<ul>", "correct": true },
+      { "text": "<ol>", "correct": false },
+      { "text": "<list>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно создать флажок (checkbox) в HTML?",
+    "answers": [
+      { "text": "<input type=\"checkbox\">", "correct": true },
+      { "text": "<check>", "correct": false },
+      { "text": "<checkbox>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно создать текстовое поле ввода в HTML?",
+    "answers": [
+      { "text": "<input type=\"text\">", "correct": true },
+      { "text": "<textfield>", "correct": false },
+      { "text": "<textinput type=\"text\">", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно создать выпадающий список в HTML?",
+    "answers": [
+      { "text": "<select>", "correct": true },
+      { "text": "<list>", "correct": false },
+      { "text": "<input type=\"dropdown\">", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно создать текстовую область в HTML?",
+    "answers": [
+      { "text": "<textarea>", "correct": true },
+      { "text": "<input type=\"textarea\">", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно вставить изображение в HTML?",
+    "answers": [
+      { "text": "<img src=\"image.gif\" alt=\"MyImage\">", "correct": true },
+      { "text": "<image src=\"image.gif\" alt=\"MyImage\">", "correct": false },
+      { "text": "<img alt=\"MyImage\">image.gif</img>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно вставить фоновое изображение в HTML?",
+    "answers": [
+      { "text": "<body style=\"background-image:url(background.gif)\">", "correct": true },
+      { "text": "<background img=\"background.gif\">", "correct": false },
+      { "text": "<body bg=\"background.gif\">", "correct": false }
+    ]
+  },
+  {
+    "question": "<iframe> используется для отображения веб-страницы внутри веб-страницы.",
+    "answers": [
+      { "text": "Верно", "correct": true },
+      { "text": "Неверно", "correct": false },
+      { "text": "Такого элемента, как <iframe>, не существует", "correct": false }
+    ]
+  },
+  {
+    "question": "Комментарии в HTML начинаются с <!-- и заканчиваются на -->.",
+    "answers": [
+      { "text": "Верно", "correct": true },
+      { "text": "Неверно", "correct": false }
+    ]
+  },
+  {
+    "question": "Блочные элементы обычно отображаются без начала новой строки.",
+    "answers": [
+      { "text": "Неверно", "correct": true },
+      { "text": "Верно", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент используется для определения нижнего колонтитула документа или раздела?",
+    "answers": [
+      { "text": "<footer>", "correct": true },
+      { "text": "<bottom>", "correct": false },
+      { "text": "<section>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно добавить видео в HTML?",
+    "answers": [
+      { "text": "<video src=\"movie.mp4\" controls>", "correct": true },
+      { "text": "<movie src=\"movie.mp4\">", "correct": false },
+      { "text": "<media src=\"movie.mp4\">", "correct": false }
+    ]
+  },
+  {
+    "question": "Что определяет элемент <aside>?",
+    "answers": [
+      { "text": "Содержимое, расположенное в стороне от основного содержимого страницы", "correct": true },
+      { "text": "Список навигации", "correct": false },
+      { "text": "Основное содержимое страницы", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент используется для определения навигационной ссылки?",
+    "answers": [
+      { "text": "<nav>", "correct": true },
+      { "text": "<navigate>", "correct": false },
+      { "text": "<navigation>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой атрибут HTML указывает альтернативный текст для изображения, если оно не может быть отображено?",
+    "answers": [
+      { "text": "alt", "correct": true },
+      { "text": "src", "correct": false },
+      { "text": "title", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой doctype является правильным для HTML5?",
+    "answers": [
+      { "text": "<!DOCTYPE html>", "correct": true },
+      { "text": "<!DOCTYPE HTML5>", "correct": false },
+      { "text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 5.0//EN\">", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент используется для определения заголовка документа или раздела?",
+    "answers": [
+      { "text": "<header>", "correct": true },
+      { "text": "<head>", "correct": false },
+      { "text": "<top>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент определяет заголовок документа?",
+    "answers": [
+      { "text": "<title>", "correct": true },
+      { "text": "<head>", "correct": false },
+      { "text": "<meta>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент используется для определения тематического разрыва в содержимом?",
+    "answers": [
+      { "text": "<hr>", "correct": true },
+      { "text": "<br>", "correct": false },
+      { "text": "<line>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент используется для определения многострочного элемента управления вводом текста?",
+    "answers": [
+      { "text": "<textarea>", "correct": true },
+      { "text": "<input type=\"multiline\">", "correct": false },
+      { "text": "<input type=\"text\" rows=\"5\">", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой атрибут используется для указания того, что поле ввода должно быть заполнено?",
+    "answers": [
+      { "text": "required", "correct": true },
+      { "text": "placeholder", "correct": false },
+      { "text": "validate", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой тип ввода определяет элемент управления ползунком?",
+    "answers": [
+      { "text": "range", "correct": true },
+      { "text": "slider", "correct": false },
+      { "text": "search", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент используется для отображения скалярного измерения в известном диапазоне?",
+    "answers": [
+      { "text": "<meter>", "correct": true },
+      { "text": "<gauge>", "correct": false },
+      { "text": "<range>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой HTML-элемент представляет результат вычисления?",
+    "answers": [
+      { "text": "<output>", "correct": true },
+      { "text": "<result>", "correct": false },
+      { "text": "<calc>", "correct": false }
+    ]
+  },
+  {
+    "question": "Каково назначение атрибута `defer` в теге `<script>`?",
+    "answers": [
+      { "text": "Он указывает, что скрипт выполняется после завершения синтаксического анализа страницы.", "correct": true },
+      { "text": "Он указывает, что скрипт должен выполняться асинхронно.", "correct": false },
+      { "text": "Он откладывает загрузку скрипта до тех пор, пока он не понадобится.", "correct": false }
+    ]
+  },
+  {
+    "question": "Что в HTML определяет атрибут `lang`?",
+    "answers": [
+      { "text": "Язык содержимого документа.", "correct": true },
+      { "text": "Кодировка символов для документа.", "correct": false },
+      { "text": "Страна, для которой предназначено содержимое.", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно написать комментарий в HTML?",
+    "answers": [
+      { "text": "<!-- Это комментарий -->", "correct": true },
+      { "text": "// Это комментарий", "correct": false },
+      { "text": "/* Это комментарий */", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой тег используется для определения короткой цитаты?",
+    "answers": [
+      { "text": "<q>", "correct": true },
+      { "text": "<blockquote>", "correct": false },
+      { "text": "<quote>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой тег используется для определения длинной цитаты?",
+    "answers": [
+      { "text": "<blockquote>", "correct": true },
+      { "text": "<q>", "correct": false },
+      { "text": "<quotation>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой тег используется для определения аббревиатуры или акронима?",
+    "answers": [
+      { "text": "<abbr>", "correct": true },
+      { "text": "<acronym>", "correct": false },
+      { "text": "<abbrv>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой тег используется для определения контактной информации автора/владельца документа?",
+    "answers": [
+      { "text": "<address>", "correct": true },
+      { "text": "<contact>", "correct": false },
+      { "text": "<info>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой тег используется для определения названия произведения (например, книги, песни, фильма)?",
+    "answers": [
+      { "text": "<cite>", "correct": true },
+      { "text": "<title>", "correct": false },
+      { "text": "<work>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой тег используется для определения части текста в альтернативном голосе или настроении?",
+    "answers": [
+      { "text": "<i>", "correct": true },
+      { "text": "<em>", "correct": false },
+      { "text": "<alt>", "correct": false }
+    ]
+  },
+  {
+    "question": "Как правильно создать кнопку отправки в HTML?",
+    "answers": [
+      { "text": "<input type=\"submit\">", "correct": true },
+      { "text": "<button type=\"submit\">", "correct": false },
+      { "text": "<input type=\"button\" value=\"Submit\">", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой атрибут указывает URL-адрес страницы, на которую ведет ссылка?",
+    "answers": [
+      { "text": "href", "correct": true },
+      { "text": "src", "correct": false },
+      { "text": "link", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой элемент является корневым элементом HTML-страницы?",
+    "answers": [
+      { "text": "<html>", "correct": true },
+      { "text": "<body>", "correct": false },
+      { "text": "<head>", "correct": false }
+    ]
+  },
+  {
+    "question": "Какой элемент содержит метаинформацию о документе?",
+    "answers": [
+      { "text": "<head>", "correct": true },
+      { "text": "<html>", "correct": false },
+      { "text": "<body>", "correct": false }
+    ]
+  }
+]
